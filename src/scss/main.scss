@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'common/button';
+@import 'header';
+@import 'body';
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand';
+	background-color: var(--white);
+}
+
+// This is the main body container
+.main_conatiner{
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--white);
+
+	display: flex;
+	flex-direction: column;
+	padding: var(--normal);
+}

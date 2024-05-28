@@ -1,0 +1,27 @@
+
+:root {
+
+	// alerts and warnings
+	--alert: #E83F6F;
+	--success: #32936F;
+	--white: #FBFBFF;
+	--black: #222222;
+	--shadow: rgba(34, 34, 34, 0.1);
+
+	// color themes
+
+	// sizes
+	--small: 0.7rem;
+	--normal: 1rem;
+	--medium: 1.5rem;
+	--large: 2.5rem;
+	--xlarge: 3.2rem;
+}
+.text{
+	color: var(--black);
+}
+// text styles
+.title{
+	font-weight: bold;
+	font-size: var(--medium);
+}

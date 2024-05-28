@@ -1,0 +1,50 @@
+.header_container, .header_container nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header_container{
+	box-shadow: 0px 0px 10px 3px var(--shadow);
+	border-radius: var(--small);
+	flex-grow: 0;
+}
+
+.header_container div{
+	flex-grow: 0;
+	padding: var(--normal) 0;
+	cursor: pointer;
+	span{
+		background-color: var(--black);
+		color: var(--white);
+		padding: var(--normal);
+		border-radius: var(--small) 0 var(--small) 0;
+		transition: 0.2s background-color ease, 0.2s color ease;
+	}
+}
+
+.header_container nav{
+	flex-grow: 1;
+	margin-left: var(--normal);
+}
+
+.header_container nav section{
+	margin-left: var(--normal);
+	span{
+		cursor: pointer;
+		position: relative;
+	}
+	span::before{
+		content: "";
+		position: absolute;
+		width: 0%;
+		height: 1px;
+		left: 0;
+		top: 100%;
+		background-color: var(--black);
+		transition: 0.3s width ease;
+	}
+	span:hover::before{
+		width: 100%;
+	}
+}
